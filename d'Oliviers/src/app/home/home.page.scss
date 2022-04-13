@@ -1,19 +1,22 @@
-#container {
+#promo {
   text-align: center;
+
+ background-color: #535252;
+ height: 20%;
 
   position: absolute;
   left: 0;
   right: 0;
-  top: 50%;
+  top: 20%;
   transform: translateY(-50%);
 }
 
-#container strong {
+#promo strong {
   font-size: 20px;
   line-height: 26px;
 }
 
-#container p {
+#promo p {
   font-size: 16px;
   line-height: 22px;
 
@@ -22,6 +25,49 @@
   margin: 0;
 }
 
-#container a {
+#Promo a {
   text-decoration: none;
 }
+#categ {
+  text-align: center;
+  
+  background-color: #535252;
+  height: 20%;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#categ strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#galeria {
+  text-align: center;
+
+  background-color: #535252;
+  height: 10%;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 70%;
+  transform: translateY(-50%);
+}
+footer{
+  text-align: center;
+
+  background-color: #535252;
+  height: 20%;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 90%;
+  transform: translateY(-50%);
+}
+

@@ -11,6 +11,26 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'lanches',
+    loadChildren: () => import('./lanches/lanches.module').then( m => m.LanchesPageModule)
+  },
+  {
+    path: 'lanches',
+    loadChildren: () => import('./lanches/lanches.module').then( m => m.LanchesPageModule)
+  },
+  {
+    path: 'refeicao',
+    loadChildren: () => import('./entrada/refeicao/refeicao.module').then( m => m.RefeicaoPageModule)
+  },
+  {
+    path: 'sobremesa',
+    loadChildren: () => import('./sobremesa/sobremesa.module').then( m => m.SobremesaPageModule)
+  },
+  {
+    path: 'bebidas',
+    loadChildren: () => import('./bebidas/bebidas.module').then( m => m.BebidasPageModule)
+  },
 ];
 
 @NgModule({
