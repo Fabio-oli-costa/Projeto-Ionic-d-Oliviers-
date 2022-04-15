@@ -1,13 +1,19 @@
+<ion-header collapse="fade">
+  <ion-toolbar>
+    <ion-title size="large"> Mansion d'Olivers </ion-title>
+  </ion-toolbar>
+</ion-header>
+
 <ion-content [fullscreen]="true">
-  <ion-header collapse="fade">
-    <ion-toolbar>
-      <ion-title size="large"> Mansion d'Olivers </ion-title>
-    </ion-toolbar>
-  </ion-header>
   <main>
     <div id="promo">
-      <strong>Aqui vem um card Promocional</strong>
-      <p>Aqui vem um botão "saiba mais" </p>
+      <ion-card>
+        <ion-card-header> PROMOÇÃO DO DIA </ion-card-header> 
+        <ion-card-content> <img src="/assets/PetitGateau.png">
+          Entrada + Refeição + sobremesa
+        </ion-card-content>
+        <ion-button expand="full" color="dark" (click)="showpromo()" > Saiba mais </ion-button>
+      </ion-card>
     </div>
     <div id="categ">
       <strong> Aqui vem as categorias </strong>
