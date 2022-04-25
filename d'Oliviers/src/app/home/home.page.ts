@@ -1,11 +1,17 @@
-import { Component } from '@angular/core';
-import { AlertController, IonCard } from '@ionic/angular';
+import { Component} from '@angular/core';
+import { AlertController} from '@ionic/angular';
+
+import SwiperCore, { Pagination } from "swiper"
+
+SwiperCore.use([Pagination]);
+
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
+
 export class HomePage {
 
   constructor(public AelrtCtrl: AlertController) {}
@@ -18,5 +24,4 @@ export class HomePage {
     });
     showpromo.present();
   }
-
 }

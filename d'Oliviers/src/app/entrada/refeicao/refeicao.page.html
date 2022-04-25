@@ -1,10 +1,25 @@
 <ion-header>
   <ion-toolbar>
     <ion-button  slot="start" size="small" fill="clear" href="home"> <ion-icon name="home"></ion-icon> </ion-button>
-    <ion-title>refeicao</ion-title>
+    <ion-title class="titulo"> REFEIÇÃO </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   
+  <div class="Lista">
+    <ion-card class="container">
+      <ion-card-header class="seção"> <h2>Refeições frias</h2> </ion-card-header>
+        <ion-card-content>
+          <ion-list>
+            <ion-item (click)="popup1()" >Opção 1 <ion-thumbnail> <img src="" alt="teste"></ion-thumbnail></ion-item>
+            <ion-item (click)="popup2()"> Bebida 2</ion-item>
+            <ion-item (click)="popup3()"> Bebida 3</ion-item>
+            <ion-item (click)="popup4()"> Bebida 4</ion-item>
+            <ion-item (click)="popup5()"> Bebida 5</ion-item>
+          </ion-list>
+        </ion-card-content>
+    </ion-card>
+  </div>
+
 </ion-content>

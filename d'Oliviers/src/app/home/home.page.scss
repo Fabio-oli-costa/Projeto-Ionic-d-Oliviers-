@@ -1,3 +1,12 @@
+
+.titulo{
+  text-align: center;
+}
+
+.titulo ion-title{
+  font-size: 32px;
+}
+/* CARD PROMOCIONAL */
 #promo {
   text-align: center;
   
@@ -10,34 +19,58 @@
   padding: 4px;
 }
 
+.promocard{
+  background: linear-gradient(rgba(0, 0, 0, 0.979),rgba(0,0,0,.50) 100%)
+}
+
+/* LISTA DE CATEGORIAS */
+.seção{
+  text-align: center;
+}
+
+
 #categ  {
   text-align: center;
 
-  background-color: #257e31; /*cor provisória para divisão das DIV */
   padding-top: 3%;
+  
   padding-bottom: 3%;
   left: 0;
   right: 0;
 }
+
 
 #categ ion-card{
-  width: 80%,
+  background: linear-gradient(rgba(0, 0, 0, 0.979),rgba(0,0,0,.50) 100%)
 }
 
-#galeria {
+/* GALERIA */
+.swiper {
   text-align: center;
 
-  background-color: #0312e6; /*cor provisória para divisão das DIV */
   padding-top: 3%;
   padding-bottom: 3%;
   left: 0;
   right: 0;
 }
 
+.swiper-wrapper img{
+  width: 80%;
+  margin: 15px;
+
+
+}
+
+.swiper-wrapper ion-card{
+  
+  background: linear-gradient(rgba(0, 0, 0, 0.979),rgba(0,0,0,.50) 100%);
+}
+
+/* FOOTER */
 footer{
   text-align: center;
 
-  background-color: #b30b0b; /*cor provisória para divisão das DIV */
+  background-color: #961325; /*cor provisória para divisão das DIV */
   padding-top: 3%;
   padding-bottom: 3%;
   left: 0;

@@ -1,66 +1,81 @@
-<ion-header collapse="fade">
-  <ion-toolbar>
+<ion-header>
+  <ion-toolbar class="titulo">
     <ion-title size="large"> Mansion d'Olivers </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content>
   <main>
+    <hr color="black">
+
     <div id="promo">
-      <ion-card>
+      <ion-card class="promocard">
         <ion-card-header> PROMOÇÃO DO DIA </ion-card-header> 
-        <ion-card-content> <img src="/assets/PetitGateau.png">
+        <ion-card-content> <img src="/assets/Pagina Inicial/PetitGateau.png">
           Entrada + Refeição + sobremesa
         </ion-card-content>
         <ion-button expand="full" color="dark" (click)="showpromo()" > Saiba mais </ion-button>
       </ion-card>
     </div>
+
+    <hr color="black">
+
+    
     <div id="categ">
-      <strong> Cardápio </strong>
-      <ion-list>
-        <ion-item>
-          <ion-card>
-            <ion-card-header> Entradas e Refeições </ion-card-header>
-              <ion-card-content> 
-                <a href="refeicao"><img src= "/assets/entradasRefs.jpg"></a>
+          <ion-card class="container">
+            <h2 class="seção"><strong> Cardápio </strong></h2>
+            <ion-card>
+              <ion-card-header> Entradas e Refeições </ion-card-header>
+                <ion-card-content>
+                  <a href="refeicao"><img src= "/assets/Pagina Inicial/entradasRefs.jpg"></a>
+                </ion-card-content>
+            </ion-card>
+            <ion-card>
+              <ion-card-header>Lanches</ion-card-header>
+              <ion-card-content>
+                <a href="lanches"><img src="/assets/Pagina Inicial/Lanches.jpg"></a>
               </ion-card-content>
+            </ion-card>
+            <ion-card>
+              <ion-card-header>Sobremesas</ion-card-header>
+              <ion-card-content>
+                <a href="sobremesa"><img src="/assets/Pagina Inicial/sobremesas.jpg"></a>
+              </ion-card-content>
+            </ion-card>
+            <ion-card>
+              <ion-card-header>Bebidas</ion-card-header>
+              <ion-card-content>
+                <a href="bebidas"><img src="/assets/Pagina Inicial/bebidas.jpg"></a>
+              </ion-card-content>
+            </ion-card>
           </ion-card>
-        </ion-item>
-        <ion-item>
-          <ion-card>
-            <ion-card-header>Lanches</ion-card-header>
-            <ion-card-content> 
-              <a href="lanches"><img src="/assets/Lanches.jpg"></a>
-            </ion-card-content>
-          </ion-card>
-        </ion-item>
-        <ion-item> 
-          <ion-card>
-            <ion-card-header>Sobremesas</ion-card-header>
-            <ion-card-content> 
-              <a href="sobremesa"><img src="/assets/sobremesas.jpg"></a>
-            </ion-card-content>
-          </ion-card>
-        </ion-item>
-        <ion-item>
-          <ion-card>
-            <ion-card-header>Bebidas</ion-card-header>
-            <ion-card-content> 
-              <a href="bebidas"><img src="/assets/bebidas.jpg"></a>
-            </ion-card-content>
-          </ion-card>
-        </ion-item>
-      </ion-list>
     </div>
-    <div id="galeria">
+
+    <hr color="black">
+
+    <div class="swiper">
       <strong> Aqui vem as imagens da galeria </strong>
-      <ion-list>
-        Imagens Aqui
-      </ion-list>
+      <div class="swiper-wrapper">
+        <ion-card>
+          <swiper [pagination]="{dynamicBullets: true}">
+            <ng-template swiperSlide> <img src="/assets/Pagina Inicial/Andouilletteg.jpg"> </ng-template>
+            <ng-template swiperSlide> <img src="/assets/Pagina Inicial/Boeuf Bourguignon.jpg"> </ng-template>
+            <ng-template swiperSlide> <img src="/assets/Pagina Inicial/Cassoulet.jpg"> </ng-template>
+            <ng-template swiperSlide> <img src="/assets/Pagina Inicial/Croque Madameg.jpg"> </ng-template>
+            <ng-template swiperSlide> <img src="/assets/Pagina Inicial/Macarons.jpg"> </ng-template>
+            <ng-template swiperSlide> <img src="/assets/Pagina Inicial/Racletteg.jpg"> </ng-template>
+          </swiper>
+        </ion-card>
+      </div>
     </div>
   </main>
   
+  <hr color="black">
+
   <footer>
     <strong> Aqui vem as aqui é o rodapé </strong>
   </footer>
+
+  <hr color="black">
+  
 </ion-content>
