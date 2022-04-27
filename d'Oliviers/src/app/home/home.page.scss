@@ -1,6 +1,9 @@
 
 .titulo{
   text-align: center;
+  
+  font-family: 'Updock', cursive;
+  color: rgb(255, 245, 102)
 }
 
 .titulo ion-title{
@@ -14,20 +17,39 @@
  padding-bottom: 3%;
  left: 0;
  right: 0;
+
+
 }
 #promo ion-button{
   padding: 4px;
 }
 
-.promocard{
-  background: linear-gradient(rgba(0, 0, 0, 0.979),rgba(0,0,0,.50) 100%)
+
+.promocard ion-card-header{
+  color:rgb(255, 245, 102);
+  font-family: 'Updock', cursive;
+  font-size: 240%;
+}
+
+.promocard ion-card-content{
+  font-family: 'Updock', cursive;
+  font-size: 180%;
+
+  color: rgb(255, 245, 102);
 }
 
 /* LISTA DE CATEGORIAS */
 .seção{
   text-align: center;
+  font-family: 'Updock', cursive;
+  font-size: xx-large;
+
+  color: rgb(255, 245, 102);
 }
 
+ion-card{
+  margin: 7%;
+}
 
 #categ  {
   text-align: center;
@@ -37,11 +59,14 @@
   padding-bottom: 3%;
   left: 0;
   right: 0;
+  
 }
 
+#categ ion-card-header{
+  font-family: 'Updock', cursive;
+  font-size: 180%;
 
-#categ ion-card{
-  background: linear-gradient(rgba(0, 0, 0, 0.979),rgba(0,0,0,.50) 100%)
+  color: rgb(255, 245, 102);
 }
 
 /* GALERIA */
@@ -52,27 +77,29 @@
   padding-bottom: 3%;
   left: 0;
   right: 0;
+
+  font-family: 'Updock', cursive;
+  font-size: xx-large;
+  color: rgb(255, 245, 102);
 }
 
 .swiper-wrapper img{
   width: 80%;
-  margin: 15px;
-
-
-}
-
-.swiper-wrapper ion-card{
-  
-  background: linear-gradient(rgba(0, 0, 0, 0.979),rgba(0,0,0,.50) 100%);
+  margin: 10px;
 }
 
 /* FOOTER */
 footer{
-  text-align: center;
-
-  background-color: #961325; /*cor provisória para divisão das DIV */
   padding-top: 3%;
   padding-bottom: 3%;
-  left: 0;
-  right: 0;
+  margin: 15px;
+
+  font-family: 'Updock', cursive;
+  color: rgb(255, 245, 102);
+}
+
+.sobre{
+  font-family: 'Updock', cursive;
+  font-size: xx-large;
+  color: rgb(255, 245, 102);
 }

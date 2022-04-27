@@ -1,19 +1,80 @@
 <ion-header>
   <ion-toolbar>
     <ion-button  slot="start" size="small" fill="clear" href="home"> <ion-icon name="home"></ion-icon> </ion-button>
-    <ion-title>lanches</ion-title>
+    <ion-title class="titulo">Les Collations</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
   <div class="Lista">
-    <ion-item> Bebida 1</ion-item>
-    <ion-item> Bebida 2</ion-item>
-    <ion-item> Bebida 3</ion-item>
-    <ion-item> Bebida 4</ion-item>
-    <ion-item> Bebida 5</ion-item>
-    <ion-item> Bebida 6</ion-item>
-  </div>
+    <ion-card class="container">
+      <ion-card-header class="seção"> <h2>Lanches</h2> </ion-card-header>
+        <ion-card-content>
+          <ion-accordion-group>
+          <ion-accordion>
+            <ion-item slot="header">
+              <ion-label> Le Croissant - R$6,00 <ion-thumbnail> <img src="/assets/Categorias/Lanches/Croissant.jpg" alt="Croissant"></ion-thumbnail> </ion-label>
+            </ion-item>
+            <ion-list slot="content">
+              <img src="/assets/Categorias/Lanches/Croissant.jpg" alt="Croissant">
+              <p> Croissant, a típica massa foleada francesa feita a base de farinha e leite. 
+                Pode ser servido sem recheio ou com recheios doces e também salgados </p>
+                <hr color="black" width="10%">
+            </ion-list>
+          </ion-accordion>
+
+          <ion-accordion>
+            <ion-item slot="header">
+              <ion-label> La Crêpe - R$6,50 <ion-thumbnail> <img src="/assets/Categorias/Lanches/Crepe.png" alt="La Crêpe"></ion-thumbnail> </ion-label>
+            </ion-item>
+            <ion-list slot="content">
+              <img src="/assets/Categorias/Lanches/Crepe.png" alt="La Crêpe">
+              <p>Uma panqueca feita a base de farinha de trigo, leite e ovos. 
+                Uma massa suave e fina, geralmente com uma cobertura doce ou molhos.
+              </p>
+              <hr color="black" width="10%">
+            </ion-list>
+          </ion-accordion>
+
+          <ion-accordion>
+            <ion-item slot="header">
+              <ion-label> Le Croque Madame - R$4,00 <ion-thumbnail> <img src="/assets/Categorias/Lanches/Croque Madameg.jpg" alt="Le Croque Madame"></ion-thumbnail> </ion-label>
+            </ion-item>
+            <ion-list slot="content">
+              <img src="/assets/Categorias/Lanches/Croque Madameg.jpg" alt="Le Croque Madame">
+              <p>Le Croque Madame é o misto quente tradicional dos bistrôs da frança.
+                Consistem em um misto quente feito no pão de forma, com um ovo frito de gema mole em cima. </p>
+                <hr color="black" width="10%">
+            </ion-list>
+          </ion-accordion>
+
+          <ion-accordion>
+            <ion-item slot="header">
+              <ion-label> Le Croque Monsieur - R$4,00 <ion-thumbnail> <img src="/assets/Categorias/Lanches/Croque Monsieur.jpg" alt="Le Croque Monsieur"></ion-thumbnail> </ion-label>
+            </ion-item>
+            <ion-list slot="content">
+              <img src="/assets/Categorias/Lanches/Croque Monsieur.jpg" alt="Le Croque Monsieur">
+              <p> Le Croque Monsieur é semelhante ao Le Croque Madame, porém desta vez ao invez do ovo frito por cima do lanche,
+                serve-se uma camada de queijo derretido que envolve o sanduíche. </p>
+                <hr color="black" width="10%">
+            </ion-list>
+          </ion-accordion>
+
+          <ion-accordion>
+            <ion-item slot="header">
+              <ion-label> Le Quice Lorraine - R$5,00 <ion-thumbnail> <img src="/assets/Categorias/Lanches/Quice Lorraine.jpg" alt="Le Quice Lorraine"></ion-thumbnail> </ion-label>
+            </ion-item>
+            <ion-list slot="content">
+              <img src="/assets/Categorias/Lanches/Quice Lorraine.jpg" alt="Le Quice Lorraine">
+              <p>Le Quice Lorraine é uma torta de queijo, coberta com nata e ovos, toucinho e iguarias.</p>
+              <hr color="black" width="10%">
+            </ion-list>
+          </ion-accordion>
+        </ion-accordion-group>
+        </ion-card-content>
+    </ion-card>
+</div>
+
 
 </ion-content>

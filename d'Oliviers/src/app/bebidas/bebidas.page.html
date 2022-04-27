@@ -1,7 +1,7 @@
 <ion-header collapse="fade">
   <ion-toolbar>
     <ion-button color="primary" slot="start" size="small" fill="clear" href="home"> <ion-icon name="home"></ion-icon> </ion-button>
-    <ion-title>BEBIDAS</ion-title>
+    <ion-title class="titulo"> Digestifs et Boissons </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -9,12 +9,71 @@
   <hr color="black">
   
   <div class="Lista">
-    <ion-item> Bebida 1</ion-item>
-    <ion-item> Bebida 2</ion-item>
-    <ion-item> Bebida 3</ion-item>
-    <ion-item> Bebida 4</ion-item>
-    <ion-item> Bebida 5</ion-item>
-    <ion-item> Bebida 6</ion-item>
-  </div>
+    <ion-card class="container">
+      <ion-card-header class="seção"> <h2> Bebidas e Digestivos </h2> </ion-card-header>
+        <ion-card-content>
+          <ion-accordion-group>
+          <ion-accordion>
+            <ion-item slot="header">
+              <ion-label> L'eau - R$5,00 <ion-thumbnail> <img src="/assets/Categorias/Bebidas/água.jpg" alt="Água"></ion-thumbnail> </ion-label>
+            </ion-item>
+            <ion-list slot="content">
+              <img src="/assets/Categorias/Bebidas/água.jpg" alt="Água">
+              <p>Água mineral ou água com gás. Pode ser servida com gelo e/ou limão</p>
+              <hr color="black" width="10%">
+            </ion-list>
+          </ion-accordion>
+
+          <ion-accordion>
+            <ion-item slot="header">
+              <ion-label> Du Coca - R$5,00 <ion-thumbnail> <img src="/assets/Categorias/Bebidas/Coca cola.jpg" alt="Coca Cola"></ion-thumbnail> </ion-label>
+            </ion-item>
+            <ion-list slot="content">
+              <img src="/assets/Categorias/Bebidas/Coca cola.jpg" alt="Coca Cola">
+              <p> Coca Cola. Refrigerante de Cola. Pode ser servido de com gelo e/ou limão.
+                Servido em garrafas de 500 ml.
+              </p>
+              <hr color="black" width="10%">
+            </ion-list>
+          </ion-accordion>
+
+          <ion-accordion>
+            <ion-item slot="header">
+              <ion-label> La bière - R$5,50 <ion-thumbnail> <img src="/assets/Categorias/Bebidas/Cerveja.png" alt="Cerveja"></ion-thumbnail> </ion-label>
+            </ion-item>
+            <ion-list slot="content">
+              <img src="/assets/Categorias/Bebidas/Cerveja.png" alt="Cerveja">
+              <p>A famosa cerveja kronenbourg 1664. Feita pela cervejaria Kronenbourg,
+                é uma cerveja suave, do tipo Pale Ale, com teor alcólico de 5%.</p>
+                <hr color="black" width="10%">
+            </ion-list>
+          </ion-accordion>
+
+          <ion-accordion>
+            <ion-item slot="header">
+              <ion-label> Le Cognac - R$8,00 <ion-thumbnail> <img src="/assets/Categorias/Bebidas/Cognac.jpg" alt="Cognac"></ion-thumbnail> </ion-label>
+            </ion-item>
+            <ion-list slot="content">
+              <img src="/assets/Categorias/Bebidas/Cognac.jpg" alt="Cognac">
+              <p>Cognac (ou conhaque), a tradicional bebida destilada, produzida no sul da frança na região de Cognac </p>
+              <hr color="black" width="10%">
+            </ion-list>
+          </ion-accordion>
+
+          <ion-accordion>
+            <ion-item slot="header">
+              <ion-label> La Cidra - R$7.00 <ion-thumbnail> <img src="/assets/Categorias/Bebidas/Cidra.jpg" alt="Cidra"></ion-thumbnail> </ion-label>
+            </ion-item>
+            <ion-list slot="content">
+              <img src="/assets/Categorias/Bebidas/Cidra.jpg" alt="Cidra">
+              <p> Cidra é uma bebida fermentada de maçã. Suave, cítrica e com baixo teor alcólico.</p>
+              <hr color="black" width="10%">
+            </ion-list>
+          </ion-accordion>
+        </ion-accordion-group>
+        </ion-card-content>
+    </ion-card>
+</div>
+
 
 </ion-content>

@@ -10,9 +10,9 @@
 
     <div id="promo">
       <ion-card class="promocard">
-        <ion-card-header> PROMOÇÃO DO DIA </ion-card-header> 
+        <ion-card-header> Promoção do Dia </ion-card-header>
         <ion-card-content> <img src="/assets/Pagina Inicial/PetitGateau.png">
-          Entrada + Refeição + sobremesa
+          Entrada + Refeição + Sobremesa
         </ion-card-content>
         <ion-button expand="full" color="dark" (click)="showpromo()" > Saiba mais </ion-button>
       </ion-card>
@@ -22,48 +22,57 @@
 
     
     <div id="categ">
-          <ion-card class="container">
-            <h2 class="seção"><strong> Cardápio </strong></h2>
+            <h2 class="seção"><strong> Le Menu </strong></h2>
             <ion-card>
               <ion-card-header> Entradas e Refeições </ion-card-header>
                 <ion-card-content>
                   <a href="refeicao"><img src= "/assets/Pagina Inicial/entradasRefs.jpg"></a>
                 </ion-card-content>
             </ion-card>
+
+            <hr color="black" width="10%">
+
             <ion-card>
               <ion-card-header>Lanches</ion-card-header>
               <ion-card-content>
                 <a href="lanches"><img src="/assets/Pagina Inicial/Lanches.jpg"></a>
               </ion-card-content>
             </ion-card>
+
+            <hr color="black" width="10%">
+
             <ion-card>
               <ion-card-header>Sobremesas</ion-card-header>
               <ion-card-content>
                 <a href="sobremesa"><img src="/assets/Pagina Inicial/sobremesas.jpg"></a>
               </ion-card-content>
             </ion-card>
+
+            <hr color="black" width="10%">
+
             <ion-card>
               <ion-card-header>Bebidas</ion-card-header>
               <ion-card-content>
                 <a href="bebidas"><img src="/assets/Pagina Inicial/bebidas.jpg"></a>
               </ion-card-content>
             </ion-card>
-          </ion-card>
     </div>
 
-    <hr color="black">
+   <hr color="black">
 
     <div class="swiper">
-      <strong> Aqui vem as imagens da galeria </strong>
+      <hr color="black" width="10%">
+      <strong> Alguns de Nossos Pratos </strong>
+      <hr color="black" width="10%">
       <div class="swiper-wrapper">
         <ion-card>
           <swiper [pagination]="{dynamicBullets: true}">
-            <ng-template swiperSlide> <img src="/assets/Pagina Inicial/Andouilletteg.jpg"> </ng-template>
-            <ng-template swiperSlide> <img src="/assets/Pagina Inicial/Boeuf Bourguignon.jpg"> </ng-template>
-            <ng-template swiperSlide> <img src="/assets/Pagina Inicial/Cassoulet.jpg"> </ng-template>
-            <ng-template swiperSlide> <img src="/assets/Pagina Inicial/Croque Madameg.jpg"> </ng-template>
-            <ng-template swiperSlide> <img src="/assets/Pagina Inicial/Macarons.jpg"> </ng-template>
-            <ng-template swiperSlide> <img src="/assets/Pagina Inicial/Racletteg.jpg"> </ng-template>
+            <ng-template swiperSlide> <img src="/assets/Pagina Inicial/Andouilletteg.jpg"> <br> <ion-label>Le Andouillete</ion-label> </ng-template>
+            <ng-template swiperSlide> <img src="/assets/Pagina Inicial/Boeuf Bourguignon.jpg"> <br> <ion-label>Le Boeuf Bourguignon</ion-label> </ng-template>
+            <ng-template swiperSlide> <img src="/assets/Pagina Inicial/Cassoulet.jpg"> <br> <ion-label>Le Cassoulet</ion-label> </ng-template>
+            <ng-template swiperSlide> <img src="/assets/Pagina Inicial/Croque Madameg.jpg"> <br> <ion-label>Le Croque Madame</ion-label> </ng-template>
+            <ng-template swiperSlide> <img src="/assets/Pagina Inicial/Macarons.jpg"> <br> <ion-label>Le Macarons</ion-label> </ng-template>
+            <ng-template swiperSlide> <img src="/assets/Pagina Inicial/Racletteg.jpg"> <br> <ion-label>La Raclette</ion-label> </ng-template>
           </swiper>
         </ion-card>
       </div>
@@ -73,7 +82,20 @@
   <hr color="black">
 
   <footer>
-    <strong> Aqui vem as aqui é o rodapé </strong>
+    <ion-accordion-group>
+      <ion-accordion>
+        <ion-item slot="header">
+          <h2 class="sobre">Contatos/Sobre</h2>
+        </ion-item>
+          <ion-list slot="content">
+              <h3>@NotreInstagram <ion-icon name="logo-instagram"></ion-icon></h3>
+              <h3>@NotreFacebook <ion-icon name="logo-facebook"></ion-icon></h3>
+              <h3>Notre Téléphone <ion-icon name="call-outline"></ion-icon></h3>
+              <h2>Desenvolvido Por: <br> Fábio Aurélio de Oliveira Costa</h2>
+            <hr color="black" width="10%">
+          </ion-list>
+        </ion-accordion>
+      </ion-accordion-group>
   </footer>
 
   <hr color="black">

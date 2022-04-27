@@ -12,49 +12,4 @@ export class RefeicaoPage implements OnInit {
 
   ngOnInit() {
   }
-
-  async popup1(){
-    const popup1 = await this.AelrtCtrl.create({
-      header: "Promoção do Dia",
-      subHeader: "Refeição com prato de entrada e sobremesa",
-      message: "A promoção de hoje inclui salada de tomate como entrada, Arroz e bife no prato principal e sorvete de sobremesa."
-    });
-    popup1.present();
-  }
-
-  async popup2(){
-    const popup2 = await this.AelrtCtrl.create({
-      header: "Promoção do Dia",
-      subHeader: "Refeição com prato de entrada e sobremesa",
-      message: "A promoção de hoje inclui salada de tomate como entrada, Arroz e bife no prato principal e sorvete de sobremesa."
-    });
-    popup2.present();
-  }
-
-  async popup3(){
-    const popup3 = await this.AelrtCtrl.create({
-      header: "Promoção do Dia",
-      subHeader: "Refeição com prato de entrada e sobremesa",
-      message: "A promoção de hoje inclui salada de tomate como entrada, Arroz e bife no prato principal e sorvete de sobremesa."
-    });
-    popup3.present();
-  }
-
-  async popup4(){
-    const popup4 = await this.AelrtCtrl.create({
-      header: "Promoção do Dia",
-      subHeader: "Refeição com prato de entrada e sobremesa",
-      message: "A promoção de hoje inclui salada de tomate como entrada, Arroz e bife no prato principal e sorvete de sobremesa."
-    });
-    popup4.present();
-  }
-  
-  async popup5(){
-    const popup5 = await this.AelrtCtrl.create({
-      header: "Promoção do Dia",
-      subHeader: "Refeição com prato de entrada e sobremesa",
-      message: "A promoção de hoje inclui salada de tomate como entrada, Arroz e bife no prato principal e sorvete de sobremesa."
-    });
-    popup5.present();
-  }
 }

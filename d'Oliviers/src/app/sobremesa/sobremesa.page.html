@@ -1,19 +1,76 @@
 <ion-header>
   <ion-toolbar>
-    <ion-button  slot="start" size="small" fill="clear" href="home"> <ion-icon name="home"></ion-icon> </ion-button>
-    <ion-title>sobremesa</ion-title>
+    <ion-button slot="start" size="small" fill="clear" href="home"> <ion-icon name="home"></ion-icon> </ion-button>
+    <ion-title class="titulo">Le Desset</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
   <div class="Lista">
-    <ion-item> Bebida 1</ion-item>
-    <ion-item> Bebida 2</ion-item>
-    <ion-item> Bebida 3</ion-item>
-    <ion-item> Bebida 4</ion-item>
-    <ion-item> Bebida 5</ion-item>
-    <ion-item> Bebida 6</ion-item>
-  </div>
+    <ion-card class="container">
+      <ion-card-header class="seção"> <h2>Sobremesas</h2> </ion-card-header>
+        <ion-card-content>
+          <ion-accordion-group>
+          <ion-accordion>
+            <ion-item slot="header">
+              <ion-label> Le Petit Gateau - R$7,00 <ion-thumbnail> <img src="/assets/Categorias/Sobremesa/PetitGateau.png" alt="Le Petit Gateau"></ion-thumbnail> </ion-label>
+            </ion-item>
+            <ion-list slot="content">
+              <img src="/assets/Categorias/Sobremesa/PetitGateau.png" alt="Le Petit Gateau">
+              <p>O Petit Gateau, doce mais tradicional da frança, um pequeno bolinho de chocolate no estilo vulcão,
+                servido com o sorvete de creme acompanhando. </p>
+                <hr color="black" width="10%">
+            </ion-list>
+          </ion-accordion>
+
+          <ion-accordion>
+            <ion-item slot="header">
+              <ion-label> Le Macarons - R$2,00 <ion-thumbnail> <img src="/assets/Categorias/Sobremesa/Macarons.jpg" alt="Le Macarons"></ion-thumbnail> </ion-label>
+            </ion-item>
+            <ion-list slot="content">
+              <img src="/assets/Categorias/Sobremesa/Macarons.jpg" alt="Le Macarons">
+              <p>Macrons sã pequenos biscoitos feitos de farinha de amendôas, açucar e claras de ovo,
+                com um recheio doce entre duas fatias dessa massa.</p>
+                <hr color="black" width="10%">
+            </ion-list>
+          </ion-accordion>
+
+          <ion-accordion>
+            <ion-item slot="header">
+              <ion-label> Le Créme Brûlée - R$7,50  <ion-thumbnail> <img src="/assets/Categorias/Sobremesa/Créme Brûlée.png" alt="Le Créme Brûlé"></ion-thumbnail> </ion-label>
+            </ion-item>
+            <ion-list slot="content">
+              <img src="/assets/Categorias/Sobremesa/Créme Brûlée.png" alt="Le Créme Brûlé">
+              <p>Creme Brûlée é uma sobremesa gelada, feita com um creme a base de leite, ovos, açucar e baunilha,
+                com uma crosta crocante de açucar queimado por cima.</p>
+                <hr color="black" width="10%">
+            </ion-list>
+          </ion-accordion>
+
+          <ion-accordion>
+            <ion-item slot="header">
+              <ion-label> Le Choux-Créme - R$4,00 <ion-thumbnail> <img src="/assets/Categorias/Sobremesa/choux-cream.png" alt="Le Choux-Créme"></ion-thumbnail> </ion-label>
+            </ion-item>
+            <ion-list slot="content">
+              <img src="/assets/Categorias/Sobremesa/choux-cream.png" alt="Le Choux-Créme">
+              <p>Massa Choux é um biscoito amanteigado, servido com recheio de creme.</p>
+              <hr color="black" width="10%">
+            </ion-list>
+          </ion-accordion>
+
+          <ion-accordion>
+            <ion-item slot="header">
+              <ion-label> La Canelé - R$2,00 <ion-thumbnail> <img src="/assets/Categorias/Sobremesa/Canelé.jpg" alt="La Canelé"></ion-thumbnail> </ion-label>
+            </ion-item>
+            <ion-list slot="content">
+              <img src="/assets/Categorias/Sobremesa/Canelé.jpg" alt="La Canelé">
+              <p>Canelé é uma pequena massa cilíndrica, aromatizada com rum e baunilha, recheada com creme no meio.</p>
+              <hr color="black" width="10%">
+            </ion-list>
+          </ion-accordion>
+        </ion-accordion-group>
+        </ion-card-content>
+    </ion-card>
+</div>
 
 </ion-content>

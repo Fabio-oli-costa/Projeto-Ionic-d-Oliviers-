@@ -1,25 +1,78 @@
 <ion-header>
   <ion-toolbar>
     <ion-button  slot="start" size="small" fill="clear" href="home"> <ion-icon name="home"></ion-icon> </ion-button>
-    <ion-title class="titulo"> REFEIÇÃO </ion-title>
+    <ion-title class="titulo"> Le Plats </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   
   <div class="Lista">
-    <ion-card class="container">
-      <ion-card-header class="seção"> <h2>Refeições frias</h2> </ion-card-header>
-        <ion-card-content>
-          <ion-list>
-            <ion-item (click)="popup1()" >Opção 1 <ion-thumbnail> <img src="" alt="teste"></ion-thumbnail></ion-item>
-            <ion-item (click)="popup2()"> Bebida 2</ion-item>
-            <ion-item (click)="popup3()"> Bebida 3</ion-item>
-            <ion-item (click)="popup4()"> Bebida 4</ion-item>
-            <ion-item (click)="popup5()"> Bebida 5</ion-item>
-          </ion-list>
-        </ion-card-content>
-    </ion-card>
+      <ion-card class="container">
+        <ion-card-header class="seção"> <h2> Entradas e Refeições </h2> </ion-card-header>
+          <ion-card-content>
+            <ion-accordion-group>
+            <ion-accordion>
+              <ion-item slot="header">
+                <ion-label> Andouillete - R$14,90 <ion-thumbnail> <img src="/assets/Categorias/Entrada e Refeições/Andouilletteg.jpg" alt="Andouillette"></ion-thumbnail> </ion-label>
+              </ion-item>
+              <ion-list slot="content">
+                <img src="/assets/Categorias/Entrada e Refeições/Andouilletteg.jpg" alt="Andouillette">
+                <p>Andouillete é uma linguiça feita a partir de intestinos de porco,
+                  defumadas em madeira de carvalho e desidratadas. Gosto e cheiro muito fortes. </p>
+                  <hr color="black" width="10%">
+              </ion-list>
+            </ion-accordion>
+
+            <ion-accordion>
+              <ion-item slot="header">
+                <ion-label> Blanquette de Veau - R$20,00<ion-thumbnail> <img src="/assets/Categorias/Entrada e Refeições/blanquette de veau.jpg" alt="Blanquette de Veau"></ion-thumbnail> </ion-label>
+              </ion-item>
+              <ion-list slot="content">
+                <img src="/assets/Categorias/Entrada e Refeições/blanquette de veau.jpg" alt="Blanquette de Veau">
+                <p> Blanquette de Veau é um guisado de carnes de vitela, feitas em molho branco com cenouras e manteiga.</p>
+                <hr color="black" width="10%">
+              </ion-list>
+            </ion-accordion>
+
+            <ion-accordion>
+              <ion-item slot="header">
+                <ion-label> Bouef Bourguignon - R$24,00  <ion-thumbnail> <img src="/assets/Categorias/Entrada e Refeições/Boeuf Bourguignon.jpg" alt="Bouef Bourguignon"></ion-thumbnail> </ion-label>
+              </ion-item>
+              <ion-list slot="content">
+                <img src="/assets/Categorias/Entrada e Refeições/Boeuf Bourguignon.jpg" alt="Bouef Bourguihnon">
+                <p>Bouef Bourguignon é também um guisado de carne de vaca, preparada com legumes e molho ao vinho.</p>
+                <hr color="black" width="10%">
+              </ion-list>
+            </ion-accordion>
+
+            <ion-accordion>
+              <ion-item slot="header">
+                <ion-label> Cassoulet - R$19,90 <ion-thumbnail> <img src="/assets/Categorias/Entrada e Refeições/Cassoulet.jpg" alt="Cassoulet"></ion-thumbnail> </ion-label>
+              </ion-item>
+              <ion-list slot="content">
+                <img src="/assets/Categorias/Entrada e Refeições/Cassoulet.jpg" alt="Cassoulet">
+                <p>Cassoulet é uma espécie de feijoada típica francesa, feita com cortes diferentes de carnes
+                  e cozida com feijões brancos.
+                </p>
+                <hr color="black" width="10%">
+              </ion-list>
+            </ion-accordion>
+
+            <ion-accordion>
+              <ion-item slot="header">
+                <ion-label> Raclette - R$11,00 <ion-thumbnail> <img src="/assets/Categorias/Entrada e Refeições/Racletteg.jpg" alt="Andouillette"></ion-thumbnail> </ion-label>
+              </ion-item>
+              <ion-list slot="content">
+                <img src="/assets/Categorias/Entrada e Refeições/Racletteg.jpg" alt="Raclette">
+                <p>Raclette remete a uma espécie de fondue de queijo, servindo a batata cozida
+                  com o queijo derretido acompanada de salames e azeitonas.</p>
+                  <hr color="black" width="10%">
+              </ion-list>
+            </ion-accordion>
+          </ion-accordion-group>
+          </ion-card-content>
+      </ion-card>
   </div>
 
 </ion-content>

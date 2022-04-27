@@ -18,9 +18,10 @@ export class HomePage {
 
   async showpromo(){
     const showpromo = await this.AelrtCtrl.create({
-      header: "Promoção do Dia",
-      subHeader: "Refeição com prato de entrada e sobremesa",
-      message: "A promoção de hoje inclui salada de tomate como entrada, Arroz e bife no prato principal e sorvete de sobremesa."
+      cssClass: "alert",
+      header: "Inclui: Entrada, Prato Principal e Sobremesa",
+      subHeader:"Pelo preço promocional de R$24,90",
+      message: "A promoção de hoje tem como entrada a nossa deliciosa Raclette acompanhada de salame defumado, com prato principal sendo o Blanquette de Veau, finalizando com o Petti Gateau na sobremesa"
     });
     showpromo.present();
   }

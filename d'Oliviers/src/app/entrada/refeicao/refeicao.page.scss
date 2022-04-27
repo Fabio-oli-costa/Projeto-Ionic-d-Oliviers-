@@ -1,11 +1,37 @@
 .titulo{
-    text-align: center;
-  }
+  text-align: center;
   
-  .titulo ion-title{
-    font-size: 32px;
-  }
-  
-  .seção{
-    text-align: center;
-  }
+  font-family: 'Updock', cursive;
+  font-size: 36px;
+
+  color: rgb(255, 245, 102);
+}
+
+.seção{
+  text-align: center;
+}
+
+h2{
+  font-family: 'Updock', cursive;
+  font-size: xx-large;
+
+  color: rgb(255, 245, 102);
+}
+
+ion-accordion ion-label{
+  font-family: 'Updock', cursive;
+  font-size: 150%;
+  color: rgb(255, 245, 102);
+}
+
+ion-list {
+  padding: 5px;
+
+}
+
+
+p{
+  color: rgb(255, 245, 102);
+  margin: 3px;
+
+}
