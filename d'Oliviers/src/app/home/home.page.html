@@ -22,40 +22,47 @@
 
     
     <div id="categ">
-            <h2 class="seção"><strong> Le Menu </strong></h2>
-            <ion-card>
-              <ion-card-header> Entradas e Refeições </ion-card-header>
-                <ion-card-content>
-                  <a href="refeicao"><img src= "/assets/Pagina Inicial/entradasRefs.jpg"></a>
-                </ion-card-content>
-            </ion-card>
-
-            <hr color="black" width="10%">
-
-            <ion-card>
-              <ion-card-header>Lanches</ion-card-header>
+      <h2 class="seção"><strong> Le Menu </strong></h2>
+      <swiper [pagination]="{dynamicBullets: true}">
+        <ng-template swiperSlide>
+          <ion-card>
+            <ion-card-header> Entradas e Refeições </ion-card-header>
               <ion-card-content>
-                <a href="lanches"><img src="/assets/Pagina Inicial/Lanches.jpg"></a>
+                <a href="refeicao"><img src= "/assets/Pagina Inicial/entradasRefs.jpg"></a>
               </ion-card-content>
-            </ion-card>
+          </ion-card>
+        <hr color="black" width="10%">
+      </ng-template>
 
-            <hr color="black" width="10%">
+      <ng-template swiperSlide>
+        <ion-card>
+          <ion-card-header>Lanches</ion-card-header>
+          <ion-card-content>
+            <a href="lanches"><img src="/assets/Pagina Inicial/Lanches.jpg"></a>
+          </ion-card-content>
+        </ion-card>
+        <hr color="black" width="10%">
+      </ng-template>
 
-            <ion-card>
-              <ion-card-header>Sobremesas</ion-card-header>
-              <ion-card-content>
-                <a href="sobremesa"><img src="/assets/Pagina Inicial/sobremesas.jpg"></a>
-              </ion-card-content>
-            </ion-card>
+      <ng-template swiperSlide>
+        <ion-card>
+          <ion-card-header>Sobremesas</ion-card-header>
+          <ion-card-content>
+            <a href="sobremesa"><img src="/assets/Pagina Inicial/sobremesas.jpg"></a>
+          </ion-card-content>
+        </ion-card>
+        <hr color="black" width="10%">
+      </ng-template>
 
-            <hr color="black" width="10%">
-
-            <ion-card>
-              <ion-card-header>Bebidas</ion-card-header>
-              <ion-card-content>
-                <a href="bebidas"><img src="/assets/Pagina Inicial/bebidas.jpg"></a>
-              </ion-card-content>
-            </ion-card>
+      <ng-template swiperSlide>
+        <ion-card>
+          <ion-card-header>Bebidas</ion-card-header>
+          <ion-card-content>
+            <a href="bebidas"><img src="/assets/Pagina Inicial/bebidas.jpg"></a>
+          </ion-card-content>
+        </ion-card>
+      </ng-template>
+      </swiper>
     </div>
 
    <hr color="black">
